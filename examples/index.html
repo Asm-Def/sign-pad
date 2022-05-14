@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+<head>
+    <meta charset="utf-8">
+    <style type="text/css">
+        html {
+            height: 100%;
+        }
+
+        body {
+            height: 100%;
+            margin: 0;
+            padding: 0;
+            overflow: hidden;
+        }
+
+        div.signpad {
+            width: 100%;
+            height: 100%;
+        }
+
+        canvas.signpad {
+            border: 1px solid #d3d3d3;
+            border-radius: 4px;
+            box-shadow: 0 0 4px rgba(0, 0, 0, 0.2);
+            margin: 2 auto;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="signpad">
+        <canvas id="signpad" class="signpad"></canvas>
+        <!-- canvas.signpad比例固定为2:1 -->
+    </div>
+
+    <script src="/dist/signpad.js"></script>
+    <script src="/examples/index.js"></script>
+    <!-- <script type="module" src="/examples/index.js"></script> -->
+</body>
+
+</html>
