@@ -4,12 +4,14 @@
         "target": "ES2015",
         "moduleResolution": "Node",
         "allowJs": true,
+        "declaration": true,
         "noEmit": false, // true for tests
         "strict": true,
         "isolatedModules": true,
         "esModuleInterop": true
     },
     "include": [
-        "./src",
-    ]
+        "./src", "dist/signpad.d.ts",
+    ],
+    "outDir": "./dist"
 }
